@@ -1,0 +1,63 @@
+doctype html
+html(lang="en" data-ng-app="test")
+	head
+		block title
+			title DropDeck
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		meta(name="format-detection", content="telephone=no")
+		// Favicon and touch icons
+		link(rel="stylesheet", href="assets/styles/frontend/bootstrap/bootstrap.min.css")
+		link(rel="stylesheet", href="assets/styles/frontend/deck/kendo.common.min.css")
+		link(rel="stylesheet", href="assets/styles/frontend/deck/kendo.default.min.css")
+		link(rel="stylesheet", href="assets/styles/frontend/deck/kendo.default.mobile.min.css")
+		link(rel="stylesheet", href="assets/styles/frontend/deck/getorgchart.css")
+		link(rel="stylesheet", href="assets/styles/frontend/styles.css")
+	body(data-ng-controller="testCtrl")
+		include ../section/menu-slidebar.jade
+		.main-content
+			div(class="search-long search-long--feature sticky search-log-deck--actions")
+					.container
+							form
+								input(type="search" placeholder="Enter your keyword")
+								button 
+									img(src="assets/images/icon/search.png" alt="search")
+							div(class="deck_actions")
+								a(href="#" class="deck_action") Deck actions
+								.hover-deck
+									ul
+										li(class="public_on_off")
+											span 
+												a(href="#") Public
+											span(class="on_off") 
+												div(class="form-switcher form-switcher-sm")
+													input(id="switcher-sm-c" name="switcher-sm-c" type="checkbox" checked)
+													label(class="switcher" for="switcher-sm-c")
+										li
+											a(href="#") Edit info 
+										li
+											a(href="#") Share on Facebook
+										li
+											a(href="#") Share via Email
+										li
+											a(href="#") View Feedback
+										li
+											a(href="#") Copy deck
+										li
+											a(href="#") Delete deck
+			div(class="deck")
+				a(href="#")
+					div(id="chart" kendo-tooltip k-target="'#chart'" k-filter="'g[data-node-id]'" k-content= "'theContent'")
+				ul(data-ng-if="isChartRendered" kendo-context-menu k-target="'#chart'" k-filter="'g[data-node-id]'"  k-on-select="onSelect(kendoEvent)")
+					li(data-tag="add") Add Child
+					li(data-tag="copy") Copy
+					li(data-tag="delete") Delete
+		//javascript dev
+		script(type="text/javascript",src="assets/scripts/frontend/jquery-v1.11.2.min.js")
+		script(type="text/javascript",src="assets/scripts/frontend/bootstrap/bootstrap.min.js")
+		script(type="text/javascript",src="assets/scripts/frontend/deck/lodash.js")
+		script(type="text/javascript",src="assets/scripts/frontend/deck/angular.js")
+		script(type="text/javascript",src="assets/scripts/frontend/deck/kendo.all.js")
+		script(type="text/javascript",src="assets/scripts/frontend/deck/getorgchart.js")
+		script(type="text/javascript",src="assets/scripts/frontend/main.js")
+		script(type="text/javascript",src="assets/scripts/frontend/deck.js")

@@ -1,0 +1,106 @@
+/************ TABLE OF CONTENTS ***************
+
+1. Fonts
+2. Reset
+**********************************************/
+@import url('../../fonts/font-awesome/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+/*** 
+
+====================================================================
+    Reset
+====================================================================
+
+ ***/
+ * {
+    margin:0px;
+    padding:0px;
+    border:none;
+    outline:none;
+}
+/*** 
+
+====================================================================
+    Global Settings
+====================================================================
+
+ ***/
+ // variable color
+ $bg: #f7f9fc;
+ $black: #000;
+ $white: #fff;
+ $green: #80ba00;
+ $line: #d7d7d7;
+ $link: #007aff;
+ $title: #2b2b2b;
+ $tim: #c644fc;
+ $tab: #4a4a4a;
+ $gray: #888b90;
+body{
+ 	font-size: 14px;
+ 	color: $black;
+ 	font-family: 'Roboto', sans-serif;
+  background:  $bg;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease; 
+}
+a{
+  &:hover{
+    text-decoration: none;
+  }
+}
+ul, ol {
+  padding: 0;
+  margin: 0; 
+}
+h1, h2, h3, h4, h5, h6 {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 10px; 
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: inherit; 
+}
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px; 
+}
+
+h3 {
+  font-size: 22px; }
+
+h4 {
+  	font-size: 18px; 
+}
+
+h5 {
+  	font-size: 16px; 
+ }
+
+h6 {
+  	font-size: 13px;
+}
+img {
+  	max-width: 100%; 
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #888b90;
+   font-weight: 400;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #888b90;
+   font-weight: 400;
+}
+:-ms-input-placeholder {  
+   color: #888b90 ;
+   font-weight: 400;
+}

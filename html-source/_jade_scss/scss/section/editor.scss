@@ -1,0 +1,134 @@
+.main-content{
+    overflow: hidden;
+}
+.deck_actions{
+  position: relative;
+}
+.hover-deck{
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    top: calc(100% - 5px);
+    right: 0;
+    width: 221px;
+    background: transparent;
+    ul{
+        margin-top: 20px;
+        position: relative;
+        &:after,
+        &:before{
+          content: '';
+          width: 0;
+          height: 0;
+          border-left: 13px solid transparent;
+          border-right: 13px solid transparent;
+          border-bottom: 13px solid #fff;
+          position: absolute;
+          bottom: 100%;
+          right: 20px;
+          margin: auto;
+          z-index: 20;
+        }
+        &:before{
+            z-index: 19;
+            bottom: calc(100% + 1px);
+            border-bottom: 13px solid #d3d3d3;
+        }
+    }
+}
+.deck_actions .hover-deck:hover, 
+.deck_actions:hover .hover-deck{
+    z-index: 20;
+    visibility: visible;
+    display: inline-block;
+}
+.hover-deck{
+    ul{
+        width: 100%;
+        border: 1px solid $line;
+        background: $white;
+        padding: 10px 0;
+        margin-top: 20px;
+    }
+    li{
+        padding: 5px 10px;
+        font-size: 14px;
+        &:hover{
+            background-color: #f1f4fc;
+            a{
+              color: $black;
+            }
+        }
+    }
+    li.public_on_off{
+      font-size: 0;
+      &:after{
+        clear: both;
+        display: table;
+        content: "";
+      }
+      span{
+        float: left;
+        font-size: 14px;
+      }
+      span.on_off{
+        float: right;
+      }
+
+    }
+}
+.search-deck.search-log-deck--actions{
+    form{
+      width: 100%;
+    }
+}
+.search-log-deck--actions{
+	form,
+	.deck_actions{
+		float: left;
+	}
+	form{
+		width: calc(100% - 151px - 12px);
+	}
+	.deck_actions{
+		width: calc(151px + 12px);
+		padding-left: 12px;
+	}
+}
+.deck_actions{
+	.deck_action{
+		width: 100%;
+		height: 34px;
+		background-color:  $tim;
+		display: inline-block;
+		text-align: center;
+		line-height: 34px;
+		color: $white;
+		border: 1px solid $tim;
+        outline: none;
+		&:hover,
+        &:focus{
+			color:  $tim;
+			background: transparent;
+            border: 1px solid $tim;
+            text-decoration: none;
+		}
+	}
+}
+.hover-deck{
+  ul{
+    li{
+      list-style: none;
+    }
+  }
+}
+@media (max-width: 767px){
+    .main-content{
+        .stickyFixed.search-long{
+            margin-left: -60px;
+            padding-left: 60px;
+        }
+    }
+}

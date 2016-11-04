@@ -1,0 +1,220 @@
+.icon-next{
+	display: inline-block;
+	&:after{
+		content: "›";
+		margin-left: 8px;
+	}
+}
+.post-group{
+	border-radius: 3px;
+	background: $white;
+  	box-shadow: 0px 1px 10px 0px rgba(0, 1, 0, 0.1);
+  	margin-bottom: 30px;
+  	.post-body{
+  		&:after{
+  			content: "";
+  			display: table;
+  			clear: both;
+  		}
+  		.post-group__item{
+  			float: left;
+  			width: calc(100% / 4);
+  			padding: 0 20px;
+  			margin-bottom: 30px;
+  		}
+  	}
+}
+.post-group--feature{
+	padding: 25px 0 0;
+	.post-header{
+		padding: 0 15px;
+		h2{
+			font-size: 28px;
+			font-weight: 400;
+			color: $title;
+			a{
+				color: $link;
+				font-size: 14px;
+				font-weight: 400;
+				display: inline-block;
+				margin-left: 15px;
+			}
+		}
+	}
+	.post-body{
+		border-top: 1px solid $line;
+		padding-top: 20px;
+	}
+}
+.post__inside--feature{
+	.logo-img{
+		border: 1px solid $line;
+		overflow: hidden;
+		position: relative;
+		height: 100px;
+		width: 100px;
+		img{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+	}
+	.content{
+		padding-left: 110px;
+		h5{
+			font-size: 16px;
+			color: #111111;
+			font-weight: 500;
+			margin-bottom: 10px;
+		}
+		p{
+			font-size: 14px;
+			color: #888b90;
+			margin-bottom: 5px;
+		}
+	}
+}
+.post__inside--feature-small{
+	&:after{
+		content: "";
+		clear: both;
+		display: table;
+	}
+	.logo-img{
+		float: left;
+	}
+}
+.post-group--Alldecks{
+	.post-header{
+		.sortby{
+			float: right;
+			.icon{
+				background: url(../../images/icon/sortby.png) no-repeat;
+				width: 7px;
+				height: 30px;
+				cursor: pointer;
+			}
+		}
+		.sortby{
+			position: relative;
+			.box-inner{
+				width: 230px;
+				z-index: 99;
+				border: 1px solid $line;
+				background-color: $white;
+			}
+			.box{
+				padding: 15px 10px;
+				ul{
+					li{
+						list-style: none;
+						padding: 5px 0;
+					}
+					a{
+						font-size: 14px;
+						i{
+							font-style: normal;
+							color: #888b90;
+						}
+					}
+				}
+			}
+		}
+	}
+	.box{
+		position: relative;
+		&:before,
+		&:after{
+			content: '';
+		    width: 0;
+		    height: 0;
+		    border-left: 13px solid transparent;
+		    border-right: 13px solid transparent;
+		    border-bottom: 13px solid #fff;
+		    position: absolute;
+		    bottom: 100%;
+		    right: 30px;
+		    margin: auto;
+		    z-index: 20;
+		}
+		&:before{
+			z-index: 19;
+		    bottom: calc(100% + 1px);
+		    border-bottom: 13px solid #d3d3d3;
+		}
+	}
+}
+.post-group--Alldecks{
+	.post-header{
+		&:after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		h2{
+			float: left;
+		}
+		.sortby{
+			float: right;
+		}
+	}
+	.sortby .box-inner:hover, 
+	.sortby:hover .box-inner{
+		z-index: 20;
+	    visibility: visible;
+	    display: inline-block;
+	}
+	.sortby{
+		.box-inner{
+			z-index: -1;
+		    visibility: hidden;
+		    position: absolute;
+		    top: calc(100% + 20px);
+		    right: calc(100% - 50px);
+		    display: none;
+		}
+	}
+}
+@media (max-width: 991px) and (min-width: 768px) {
+	.post-group{
+		.post-body{
+			.post-group__item{
+				width: calc(100% / 3);
+				&:nth-child(3n+1){
+					clear: both;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 767px) and (min-width: 500px) {
+	.main-content{
+		margin-left: 60px;
+	}
+	.post-group{
+		.post-body{
+			.post-group__item{
+				width: calc(100% / 2);
+				&:nth-child(2n+1){
+					clear: both;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 500px){
+	.main-content{
+		margin-left: 60px;
+	}
+	.post-group{
+		.post-body{
+			.post-group__item{
+				width: calc(100% / 1);
+				&:nth-child(n+1){
+					clear: both;
+				}
+			}
+		}
+	}
+}

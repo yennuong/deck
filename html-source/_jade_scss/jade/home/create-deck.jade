@@ -1,0 +1,56 @@
+doctype html
+html(lang="en")
+	head
+		block title
+			title Creat-DropDeck
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		meta(name="format-detection", content="telephone=no")
+		// Favicon and touch icons
+		link(rel="stylesheet", href="assets/styles/frontend/bootstrap/bootstrap.min.css")
+		link(rel="stylesheet", href="assets/styles/frontend/bootstrap-tagsinput/bootstrap-tagsinput.css")
+		link(rel="stylesheet", href="assets/styles/frontend/bootstrap-multiselect/bootstrap-multiselect.css")
+		link(rel="stylesheet", href="assets/styles/frontend/jquery.mCustomScrollbar.min.css")
+		link(rel="stylesheet", href="assets/styles/frontend/styles.css")
+	body
+		include ../section/menu-slidebar.jade
+		.main-content
+				div(class="search-long search-long--feature sticky search-log-deck--actions")
+					.container
+							form
+								input(type="search" placeholder="Enter your keyword")
+								button 
+									img(src="assets/images/icon/search.png" alt="search")
+							div(class="deck_actions")
+								a(href="#" class="deck_action" data-toggle="modal" data-target="#myModal") Create new deck
+				include ../section/tab.jade
+				div(class="modal fade modal-create--deck" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+					div(class="modal-dialog" role="document")
+						div(class="modal-content")
+							div(class="modal-header")
+								button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+									span( aria-hidden="true") &times;
+								h4(class="modal-title" id="myModalLabel") Create New Deck
+							div(class="modal-body")
+								div(class="upload-logo")
+									label(for="choose-img")
+										img(src="assets/images/desk/camera.png" alt="")
+									input#choose-img(type="file")
+								div(class="info-creat--deck")
+									p.name
+										input(type="text" placeholder="Name")
+									
+									p.link-dropdeck
+										a(href="#")	https://godropdeck.com/
+										input(type="text" placeholder="dropdeck")
+									p.tag
+										input(type="text" placeholder="dropdeck" data-role="tagsinput" )
+							div(class="modal-footer")
+								button()	Create new	
+		//javascript dev
+		script(type="text/javascript",src="assets/scripts/frontend/jquery-v1.11.2.min.js")
+		script(type="text/javascript",src="assets/scripts/frontend/bootstrap/bootstrap.min.js")
+		script(type="text/javascript",src="assets/scripts/frontend/bootstrap-tagsinput/bootstrap-tagsinput.min.js")
+		script(type="text/javascript",src="assets/scripts/frontend/bootstrap-multiselect/bootstrap-multiselect.js")
+		script(type="text/javascript",src="assets/scripts/frontend/jquery.mCustomScrollbar.concat.min.js")
+		script(type="text/javascript",src="assets/scripts/frontend/main.js")

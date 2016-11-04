@@ -1,0 +1,268 @@
+doctype html
+html(lang="en")
+	head
+		block title
+			title [5] PROFILE - Editor - TRUST CIRCLE.jade
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		meta(name="format-detection", content="telephone=no")
+		// Favicon and touch icons
+		link(rel="stylesheet", href="assets/styles/frontend/bootstrap/bootstrap.min.css")
+		link(rel="stylesheet", href="assets/styles/frontend/swiper/swiper.min.css")
+		link(rel="stylesheet", href="assets/styles/frontend/styles.css")
+	body
+		
+		include ../section/menu-slidebar.jade
+		.main-content
+			.profile-page
+				.container
+					.row
+						.col-md-9.col-md-offset-1
+							.info-profile
+								.avatar
+									.img
+										img(src="assets/images/profile/tuananh.png", alt="")
+								.info-user
+									.top
+										.social 
+											ul
+												li
+													a(href="#" class="facebook")
+														i(class="fa fa-facebook")
+												li
+													a(href="#" class="linkedin")
+														i(class="fa fa-linkedin")
+												li
+													a(href="#" class="google-plus")
+														i(class="fa fa-google-plus")
+										div.block__title-wrap
+											h2.block__title.block__title--view VO VIET ANH
+									
+									p.mail @vovietanh
+									p.desc Bio Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
+									div(class="trustful")
+										div(class="left")
+											p Folliow 
+												span 69k
+											ul.list-user
+												li
+													img(src="assets/images/u1.png", alt="ad")
+												li
+													img(src="assets/images/u1.png", alt="ad")
+												li
+													img(src="assets/images/u1.png", alt="ad")
+												li
+													img(src="assets/images/u1.png", alt="ad")
+												li
+													img(src="assets/images/u1.png", alt="ad")
+										div(class="right")
+											p 90% Trusted
+												span 69k
+											ul.list-user
+												li
+													img(src="assets/images/u1.png", alt="ad")
+												li
+													img(src="assets/images/u1.png", alt="ad")
+												li
+													img(src="assets/images/u1.png", alt="ad")
+												li
+													img(src="assets/images/u1.png", alt="ad")
+												li
+													img(src="assets/images/u1.png", alt="ad")
+			div(class="line_trust")					
+			div(class="tab_trust_circle")
+				.container
+					.row
+						div(class="col-md-offset-1 col-md-9")
+							div(class="tab_trust")
+								ul.nav.nav-tabs(role='tablist')
+									li.active(role='presentation')
+										a(href='#home', aria-controls='home', role='tab', data-toggle='tab') Followers 
+											span (69k)
+									li(role='presentation')
+										a(href='#profile', aria-controls='profile', role='tab', data-toggle='tab') Following 
+											span (12)
+									li(role='presentation')
+										a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') Trustors 
+											span (9)
+									li(role='presentation')
+										a(href='#settings', aria-controls='settings', role='tab', data-toggle='tab') Trusting 
+											span (5)
+								.tab-content
+									#home.tab-pane.active.fade.in(role='tabpanel')
+										div(class="infor-user-trust")
+											div(class="wrapper_info")
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+									#profile.tab-pane.fade(role='tabpanel')
+										div(class="infor-user-trust")
+											div(class="wrapper_info")
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+									#messages.tab-pane.fade(role='tabpanel')
+										div(class="infor-user-trust")
+											div(class="wrapper_info")
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+									#settings.tab-pane.fade(role='tabpanel')
+										div(class="infor-user-trust")
+											div(class="wrapper_info")
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+												div(class="user")
+													.img
+														img(src="assets/images/profile/tuananh.png", alt="")
+													.info
+														p.name Vo Viet Anh
+		//javascript dev
+		script(type="text/javascript",src="assets/scripts/frontend/jquery-v1.11.2.min.js")
+		script(type="text/javascript",src="assets/scripts/frontend/bootstrap/bootstrap.min.js")
+		script(type="text/javascript",src="assets/scripts/frontend/swiper/swiper.min.js")
+		script(type="text/javascript",src="assets/scripts/frontend/main.js")

@@ -1,0 +1,86 @@
+doctype html
+html(lang="en")
+	head
+		block title
+			title DropDeck
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		meta(name="format-detection", content="telephone=no")
+		// Favicon and touch icons
+		link(rel="stylesheet", href="assets/styles/frontend/bootstrap/bootstrap.min.css")
+		link(rel="stylesheet", href="assets/styles/frontend/styles.css")
+	body
+		include section/menu-slidebar.jade
+		.main-content
+			div(class="settings-section")
+				.container
+					.row
+						div(class="col-md-offset-1 col-md-7")
+							div(class="page-settings")
+								h1.title Settings
+								.info-settings.info
+									.info-user
+										form
+											p.profile_link
+												span Profile link
+												span 
+													a(href="#")	Https://godropdeck.com/
+													input(type="text")
+
+											p.password 
+												span Password
+												span
+													input(type="password" placeholder="Current password")
+													input(type="password" placeholder="New password")
+													input(type="password" placeholder="Confirm new password")
+											p.change
+												button() Change
+									.info-social-user
+										p.facebook
+											span Facebook
+											span 
+												a(href="#") Connect Facebook account
+										p.linkedin
+											span Linkedin
+											span 
+												a(href="#") Connected
+										p.google
+											span Google
+											span 
+												a(href="#") Connect Google account
+									.info-user-want
+										ul(class="btn-check")
+											li
+												input(type="checkbox"  name="vehicle" id="want-1")
+												label(for="want-1")
+													span
+													p I want to receive notification when someone follows my deck
+											li
+												input(type="checkbox"   name="vehicle" id="want-2")
+												label(for="want-2")
+													span
+													p I want to receive notifications when someone comments on my deck
+											li
+												input(type="checkbox" name="vehicle" id="want-3")
+												label(for="want-3")
+													span
+													p 	I want to receive notification when someone approves/denies a claim on my deck
+											li
+												input(type="checkbox" name="vehicle" id="want-4")
+												label(for="want-4")
+													span
+													p I want to receive notification when someone sends feedback on my deck
+											li
+												input(type="checkbox"  name="vehicle" id="want-5")
+												label(for="want-5")
+													span
+													p I want to receive notification when someone I follow creates a deck
+											li
+												input(type="checkbox" name="vehicle" id="want-6")
+												label(for="want-6")
+													span
+													p I want to receive notification when someone whose email I have entered (to share a deck on Facebook or via Email) joins DropDeck. 
+			
+		//javascript dev
+		script(type="text/javascript",src="assets/scripts/frontend/jquery-v1.11.2.min.js")
+		script(type="text/javascript",src="assets/scripts/frontend/main.js")

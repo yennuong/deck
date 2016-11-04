@@ -1,0 +1,181 @@
+.settings-section{
+	padding: 28px 0 50px;
+}
+h1.title{
+	font-size: 28px;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+.page-settings{
+	h1{
+		padding-bottom: 20px;
+		border-bottom: 1px solid $line;
+	}
+	.info-user{
+		padding-top: 30px;
+	}
+	.info-user,
+	.info-social-user {
+		border-bottom: 1px solid $line;
+	}
+	.info-social-user{
+		padding: 20px 0 20px;
+	}
+}
+.info{
+	p{
+		margin-bottom: 30px;
+		&:after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		span{
+			width: 50%;
+			display: block;
+			float: left;
+		}
+	}
+	span{
+		font-size: 16px;
+	}
+}
+.info-user{
+	p.profile_link{
+		span{
+			&:nth-child(2){
+				font-size: 0;
+				display: inline-block;
+				a,
+				input{
+					display: inline-block;
+					font-size: 16px;
+					width: 50%;
+					vertical-align: middle;
+				}
+				a{
+					color: $black;
+					font-size: 14px;
+				}
+				input{
+					border: 1px solid $line;
+					height: 32px;
+					line-height: 32px;
+					padding: 0 15px;
+				}
+			}
+		}
+	}
+	p.password{
+		margin-bottom: 0;
+		input{
+			width: 100%;
+			height: 32px;
+			line-height: 32px;
+			padding: 0 15px;
+			border: 1px solid $line;
+		}
+		input{
+			margin-bottom: 15px;
+		}
+	}
+	.change{
+		text-align: right;
+		button{
+			display: inline-block;
+			background: #4a4a4a;
+			border: 1px solid #4a4a4a;
+			color: $white;
+			height: 34px;
+			line-height: 34px;
+			padding: 0 25px;
+			&:hover{
+				background: transparent;
+				color: #4a4a4a;
+			}
+		}
+	}
+}
+.info-social-user{
+	p.facebook,
+	p.google{
+		a{
+			color: #5856d6;
+			&:hover{
+				color: #5856d6;
+			}
+		}
+	}
+	p.linkedin{
+		a{
+			color:  $gray;
+		}
+	}
+}
+.info-user-want{
+	margin-top: 30px;
+	ul{
+		li{
+			list-style: none;
+		}
+	}
+}
+ul.btn-check{
+	li{
+		margin-bottom: 10px;
+	}
+	input[type="checkbox"]{
+		display: none;
+	}
+	input[type="checkbox"] + label {
+		span{
+			&:before{
+				content: "\f096";
+			    display: inline-block;
+			    vertical-align: middle;
+			   	font-family: FontAwesome;
+			   	width: 10px;
+			   	height: 10px;
+			}
+		}
+	}
+	input[type="checkbox"]:checked + label {
+		span{
+			&:before{
+				content: "\f046";
+		    	text-align: center;
+			}
+		}
+	}
+	p{
+		margin-bottom: 0;
+	}
+	span,
+	p{
+		display: inline-block;
+		vertical-align: top;
+		font-weight: 400;
+		font-size: 16px;
+	}
+	label{
+		width: 100%;
+	}
+	span{
+		width: 40px;
+		line-height: 1;
+	}
+	p{
+		width: calc(100% - 45px);
+	}
+}
+.block__form{
+	ul.btn-check{
+		margin: 15px 0;
+		li{
+			list-style: none;
+		}
+		span{
+			width: 20px;
+		}
+	}
+}

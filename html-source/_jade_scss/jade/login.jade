@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+	head
+		block title
+			title DropDeck
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		meta(name="format-detection", content="telephone=no")
+		// Favicon and touch icons
+		link(rel="stylesheet", href="assets/styles/frontend/bootstrap/bootstrap.min.css")
+		link(rel="stylesheet", href="assets/styles/frontend/styles.css")
+	body
+		.wrapper
+			.form-login
+				.form-login--feature
+					h1
+						a(href="#" class="logo")
+							img(src="assets/images/logo.png" alt="logo")
+					div(class="sign_up login")
+						p.title
+							span.sign_up Sign up
+							span Login
+						p.facebook
+							a(href="#") Facebook
+						p.twitter
+							a(href="#")  Linkedin
+						p.google_plus
+							a(href="#") Google plus
+						p.terms By signing up, you agree with our 
+							a(href="#") terms 
+							| and 
+							a(href="")	privacy 
+				.div
+					p.need-help 
+						a(href="#")	You need help ?  -   About us
+		//javascript dev
+		script(type="text/javascript",src="assets/scripts/frontend/jquery-v1.11.2.min.js")

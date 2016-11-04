@@ -1,0 +1,109 @@
+.modal-create--deck{
+	h4.modal-title{
+		display: inline-block;
+		font-size: 21px;
+		color: #4a4a4a;
+		font-weight: 400;
+	}
+	.modal-body{
+		.upload-logo,
+		.info-creat--deck{
+			display: inline-block;
+			vertical-align: top;
+		}
+		.info-creat--deck{
+			width: calc(100% - 167px - 4px);
+			padding-left: 24px;
+			margin-top: 5px;
+		}
+		textarea{
+			border: 1px solid $line;
+			width: 100%;
+			padding: 10px 15px;
+		}
+	}
+	.info-creat--deck{
+		.name{
+			input{
+				width: 100%;
+				border: 1px solid $line;
+				height: 34px;
+				padding: 0 15px;
+			}
+		}
+		input{
+			border: 1px solid $line;
+			height: 34px;
+			padding: 0 15px;
+		}
+		.link-dropdeck{
+			font-size: 0;
+			a,
+			input{
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 16px;
+			}
+			a{
+				width: 50%;
+			}
+			input{
+				width: 50%;
+			}
+		}
+		p.tag{
+			.bootstrap-tagsinput{
+				box-shadow: none;
+				width: 100%;
+				border-radius: 0;
+			}
+			input{
+				border: 0;
+				width: 100%;
+			}
+		}
+
+	}
+	.modal-footer{
+		button{
+			color: $white;
+			background: #1d61f0;
+			padding: 5px 40px;
+			font-size: 16px;
+		}
+	}
+}
+.modal-footer{
+	label{
+		float: left;
+		font-weight: 400;
+	}
+
+}
+p.tag{
+	.bootstrap-tagsinput{
+		padding: 0px 15px;
+		input{
+			padding: 0;
+		}
+		span.label-info{
+			background: #dcdcdf;
+			color: $black;
+			border-radius: 8px;
+			span{
+				display: inline-block;
+				&:after{
+					content: "×";
+					color: $white;
+					background-color: #c8c8cc;
+					border-radius: 50%;
+					width: 12px;
+					height: 12px;
+					text-align: center;
+					line-height: 12px;
+					display: inline-block;
+				}
+			}
+		}
+	}
+}

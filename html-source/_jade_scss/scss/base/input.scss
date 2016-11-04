@@ -1,0 +1,83 @@
+.form-switcher input[type="checkbox"] {
+    display: none;
+}
+.form-switcher.form-switcher-sm input[type="checkbox"]:checked + .switcher {
+    border-color: #16b85f;
+    -moz-box-shadow: 0px 0px 0px 9px #16b85f inset;
+    -webkit-box-shadow: 0px 0px 0px 9px #16b85f inset;
+    box-shadow: 0px 0px 0px 9px #16b85f inset;
+}
+.form-switcher input[type="checkbox"]:checked + .switcher {
+    border-color: #16b85f;
+    -moz-box-shadow: 0px 0px 0px 12.5px #16b85f inset;
+    -webkit-box-shadow: 0px 0px 0px 12.5px #16b85f inset;
+    box-shadow: 0px 0px 0px 12.5px #16b85f inset;
+}
+.form-switcher input[type="checkbox"]:checked + .switcher {
+    -moz-transition: box-shadow 0.2s ease-out, border-color 0.2s ease-out 0.02s;
+    -o-transition: box-shadow 0.2s ease-out, border-color 0.2s ease-out 0.02s;
+    -webkit-transition: box-shadow 0.2s ease-out, border-color 0.2s ease-out;
+    -webkit-transition-delay: 0s, 0.02s;
+    transition: box-shadow 0.2s ease-out, border-color 0.2s ease-out 0.02s;
+}
+.form-switcher.form-switcher-sm .switcher {
+    width: 31px;
+    height: 18px;
+}
+.form-switcher .switcher {
+    background: #ffffff;
+    border: 2px solid #e6e6e6;
+    padding: 0;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    -moz-transition: box-shadow 0.2s ease-out 0.02s, border-color 0.2s ease-out;
+    -o-transition: box-shadow 0.2s ease-out 0.02s, border-color 0.2s ease-out;
+    -webkit-transition: box-shadow 0.2s ease-out, border-color 0.2s ease-out;
+    -webkit-transition-delay: 0.02s, 0s;
+    transition: box-shadow 0.2s ease-out 0.02s, border-color 0.2s ease-out;
+}
+.form-switcher.form-switcher-sm input[type="checkbox"]:checked + .switcher:after {
+    -moz-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    -webkit-transform: translateX(13px);
+    transform: translateX(13px);
+}
+.form-switcher input[type="checkbox"]:checked + .switcher:after {
+    -moz-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    -webkit-transform: translateX(18px);
+    transform: translateX(18px);
+}
+.form-switcher.form-switcher-sm .switcher:after {
+    height: 14px;
+    width: 14px;
+}
+.form-switcher .switcher:after {
+    height: 21px;
+    width: 21px;
+}
+.form-switcher .switcher:after {
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+}

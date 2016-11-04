@@ -1,0 +1,91 @@
+.views-info{
+	width: 100%;
+	.extras-sparkbars{
+		height: 4px;
+	}
+	.extras-sparkbar-likes{
+		float: left;
+		background: #007aff;
+		width: 80%;
+		height: 4px;
+	}
+	.extras-sparkbar-dislikes{
+		float: left;
+		width: 20%;
+		height: 4px;
+		background: #e74c3c;
+	}
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	background: #7f8c8d !important;
+}
+.mCSB_scrollTools .mCSB_draggerRail{
+	width: 4px !important;
+	background: #c7c7cc !important;
+}
+.back-to-deck{
+	list-style: none;
+	a{
+		color: #5856d6;
+		font-size: 16px;
+		i{
+			margin-right: 10px;
+		}
+	}
+}
+$approve: #007aff;
+$denied:  #e74c3c;
+.button--approve{
+	a{
+		display: inline-block;
+	}
+	&:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.btn-approve,
+	.btn-denied{
+		width: 48%;
+		height: 44px;
+		line-height: 44px;
+		text-align: center;
+		cursor: pointer;
+		i{
+			margin-right: 7px;
+		}
+	}
+	.btn-approve{
+		float: left;
+	}
+	.btn-denied{
+		float: right;
+	}
+}
+.button--approve{
+	.btn-approve{
+		background: transparent;
+		color: $approve;
+		transition: 0.5s;
+		border: 2px solid $approve;
+	}
+}
+.button--approve.active{
+	.btn-approve{
+		background: $approve;
+		color: $white;
+	}
+}
+.button--approve{
+	.btn-denied{
+		border: 2px solid $denied;
+		color: #e74c3c;
+		background: transparent;
+	}
+}
+.button--approve.active{
+	.btn-denied{
+		background: $denied;
+		color: $white;
+	}
+}

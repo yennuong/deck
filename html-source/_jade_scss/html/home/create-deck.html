@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DropDeck</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Favicon and touch icons-->
+    <link rel="stylesheet" href="assets/styles/frontend/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/frontend/bootstrap-multiselect/bootstrap-multiselect.css">
+    <link rel="stylesheet" href="assets/styles/frontend/jquery.mCustomScrollbar.min.css">
+    <!--link(rel="stylesheet", href="assets/styles/frontend/stickytooltip/stickytooltip.css")-->
+    <link rel="stylesheet" href="assets/styles/frontend/styles.css">
+  </head>
+  <body>
+    <section class="menu menu-slidebar menu-slidebar--feature">
+      <div class="icon-active"><span></span></div>
+      <div class="info">
+        <div class="user">
+          <div class="avatar"><img src="assets/images/user.png"></div>
+          <div class="name">ChanKiet</div>
+        </div>
+        <div class="menu--left">
+          <ul>
+            <li><a href="#"> <i class="icon"><img src="assets/images/icon/home.png"></i>Home</a></li>
+            <li><a href="#"> <i class="icon"><img src="assets/images/icon/network.png"></i>Network</a></li>
+            <li><a href="#"> <i class="icon"><img src="assets/images/icon/setting.png"></i>Setting</a></li>
+            <li><a href="#"> <i class="icon"><img src="assets/images/icon/logout.png"></i>Log out</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="main-content">
+      <div class="search-long search-long--feature sticky search-log-deck--actions">
+        <div class="container">
+          <form>
+            <input type="search" placeholder="Enter your keyword">
+            <button> <img src="assets/images/icon/search.png" alt="search"></button>
+          </form>
+          <div class="deck_actions"><a href="#" class="deck_action">Deck actions</a>
+            <div class="hover-deck">
+              <ul>
+                <li class="public_on_off"><span> <a href="#">Public</a></span><span class="on_off"> 
+                    <div class="form-switcher form-switcher-sm">
+                      <input id="switcher-sm-c" name="switcher-sm-c" type="checkbox" checked>
+                      <label for="switcher-sm-c" class="switcher"></label>
+                    </div></span></li>
+                <li><a href="#">Edit info </a></li>
+                <li><a href="#">Share on Facebook</a></li>
+                <li><a href="#">Share via Email</a></li>
+                <li><a href="#">View Feedback</a></li>
+                <li><a href="#">Copy deck</a></li>
+                <li><a href="#">Delete deck</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="profile_deck">
+        <div class="news-tab__wrap">
+          <div class="decks-top">
+            <ul role="tablist" class="news-tab__header nav nav-tabs">
+              <li><a href="#tab1" role="tab" data-toggle="tab">My decks</a></li>
+              <li class="active"><a href="#tab2" role="tab" data-toggle="tab">Featured </a></li>
+              <li><a href="#tab3" role="tab" data-toggle="tab">Following </a></li>
+              <li><a href="#tabAll" id="tabAll">All</a></li>
+            </ul>
+            <div class="left-sort">
+              <div class="treding_tab">
+                <select multiple="multiple" id="example-single">
+                  <option value="Slush 2016">Slush 2016</option>
+                  <option value="IPP">IPP</option>
+                  <option value="HATCH">HATCH</option>
+                  <option value="Finland">Finland</option>
+                  <option value="Slush 2016">Vietnam</option>
+                  <option value="Slush 2016">Fintech</option>
+                  <option value="Slush 2016">Vietnam</option>
+                  <option value="Slush 2016">Fintech</option>
+                </select>
+              </div>
+              <div class="sortby">
+                <select>
+                  <option>Newest</option>
+                  <option>Most Viewed</option>
+                  <option>Most Activity</option>
+                  <option>D-Ranking (beta)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="news-tab__body tab-content">
+            <div id="tab1" class="col col2 tab-pane fade active in">
+              <div class="main-col">
+                <div class="col__item">
+                  <div class="box"><a href="#" class="decks"><img src="assets/images/logo/1.png" alt=""></a>
+                    <div class="box-hover">
+                      <div class="box-item">
+                        <div class="img"><img src="assets/images/logo/hover-1.png" alt=""></div>
+                        <div class="text-more"><span class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__item">
+                  <div class="box"><a href="#" class="decks"><img src="assets/images/logo/1.png" alt=""></a>
+                    <div class="box-hover">
+                      <div class="box-item">
+                        <div class="img"><img src="assets/images/logo/hover-1.png" alt=""></div>
+                        <div class="text-more"><span class="desc">L2orem ipsum dolor sit amet, consectetur adipisicing elit...</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__item">
+                  <div class="box"><a href="#" class="decks"><img src="assets/images/logo/1.png" alt=""></a>
+                    <div class="box-hover">
+                      <div class="box-item">
+                        <div class="img"><img src="assets/images/logo/hover-1.png" alt=""></div>
+                        <div class="text-more"><span class="desc">L2orem ipsum dolor sit amet, consectetur adipisicing elit...</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__item">
+                  <div class="box"><a href="#" class="decks"><img src="assets/images/logo/1.png" alt=""></a>
+                    <div class="box-hover">
+                      <div class="box-item">
+                        <div class="img"><img src="assets/images/logo/hover-1.png" alt=""></div>
+                        <div class="text-more"><span class="desc">L2orem ipsum dolor sit amet, consectetur adipisicing elit...</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__item">
+                  <div class="box"><a href="#" class="decks"><img src="assets/images/logo/1.png" alt=""></a>
+                    <div class="box-hover">
+                      <div class="box-item">
+                        <div class="img"><img src="assets/images/logo/hover-1.png" alt=""></div>
+                        <div class="text-more"><span class="desc">3L2orem ipsum dolor sit amet, consectetur adipisicing elit...</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__item">
+                  <div class="box"><a href="#" class="decks"><img src="assets/images/logo/1.png" alt=""></a>
+                    <div class="box-hover">
+                      <div class="box-item">
+                        <div class="img"><img src="assets/images/logo/hover-1.png" alt=""></div>
+                        <div class="text-more"><span class="desc">5L2orem ipsum dolor sit amet, consectetur adipisicing elit...</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab2" class="col col2 tab-pane fade">
+              <div class="main-col">
+                <div class="col__item">
+                  <div class="box"><a href="#" class="decks"><img src="assets/images/logo/5.png" alt=""></a>
+                    <div class="box-hover">
+                      <div class="box-item">
+                        <div class="img"><img src="assets/images/logo/hover-1.png" alt=""></div>
+                        <div class="text-more"><span class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span><span> <a href="#">More</a></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__item">
+                  <div class="box"><a href="#" class="decks"><img src="assets/images/logo/6.png" alt=""></a>
+                    <div class="box-hover">
+                      <div class="box-item">
+                        <div class="img"><img src="assets/images/logo/hover-1.png" alt=""></div>
+                        <div class="text-more"><span class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span><span> <a href="#">More</a></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__item">
+                  <div class="box"><a href="#" class="decks"><img src="assets/images/logo/7.png" alt=""></a>
+                    <div class="box-hover">
+                      <div class="box-item">
+                        <div class="img"><img src="assets/images/logo/hover-1.png" alt=""></div>
+                        <div class="text-more"><span class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span><span> <a href="#">More</a></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__item">
+                  <div class="box"><a href="#" class="decks"><img src="assets/images/logo/5.png" alt=""></a>
+                    <div class="box-hover">
+                      <div class="box-item">
+                        <div class="img"><img src="assets/images/logo/hover-1.png" alt=""></div>
+                        <div class="text-more"><span class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span><span> <a href="#">More</a></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab3" class="col col2 tab-pane fade">
+              <div class="main-col">
+                <div class="col__item">
+                  <div class="box"><a href="#" class="decks"><img src="assets/images/logo/7.png" alt=""></a>
+                    <div class="box-hover">
+                      <div class="box-item">
+                        <div class="img"><img src="assets/images/logo/hover-1.png" alt=""></div>
+                        <div class="text-more"><span class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span><span> <a href="#">More</a></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__item">
+                  <div class="box"><a href="#" class="decks"><img src="assets/images/logo/6.png" alt=""></a>
+                    <div class="box-hover">
+                      <div class="box-item">
+                        <div class="img"><img src="assets/images/logo/hover-1.png" alt=""></div>
+                        <div class="text-more"><span class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span><span> <a href="#">More</a></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__item">
+                  <div class="box"><a href="#" class="decks"><img src="assets/images/logo/7.png" alt=""></a>
+                    <div class="box-hover">
+                      <div class="box-item">
+                        <div class="img"><img src="assets/images/logo/hover-1.png" alt=""></div>
+                        <div class="text-more"><span class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span><span> <a href="#">More</a></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__item">
+                  <div class="box"><a href="#" class="decks"><img src="assets/images/logo/6.png" alt=""></a>
+                    <div class="box-hover">
+                      <div class="box-item">
+                        <div class="img"><img src="assets/images/logo/hover-1.png" alt=""></div>
+                        <div class="text-more"><span class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span><span> <a href="#">More</a></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__item">
+                  <div class="box"><a href="#" class="decks"><img src="assets/images/logo/7.png" alt=""></a>
+                    <div class="box-hover">
+                      <div class="box-item">
+                        <div class="img"><img src="assets/images/logo/hover-1.png" alt=""></div>
+                        <div class="text-more"><span class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span><span> <a href="#">More</a></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__item">
+                  <div class="box"><a href="#" class="decks"><img src="assets/images/logo/6.png" alt=""></a>
+                    <div class="box-hover">
+                      <div class="box-item">
+                        <div class="img"><img src="assets/images/logo/hover-1.png" alt=""></div>
+                        <div class="text-more"><span class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span><span> <a href="#">More</a></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__item">
+                  <div class="box"><a href="#" class="decks"><img src="assets/images/logo/7.png" alt=""></a>
+                    <div class="box-hover">
+                      <div class="box-item">
+                        <div class="img"><img src="assets/images/logo/hover-1.png" alt=""></div>
+                        <div class="text-more"><span class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span><span> <a href="#">More</a></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col__item">
+                  <div class="box"><a href="#" class="decks"><img src="assets/images/logo/7.png" alt=""></a>
+                    <div class="box-hover">
+                      <div class="box-item">
+                        <div class="img"><img src="assets/images/logo/hover-1.png" alt=""></div>
+                        <div class="text-more"><span class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span><span> <a href="#">More</a></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="load-more text-center"><img src="assets/images/loader.png" alt="loader"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--javascript dev-->
+    <script type="text/javascript" src="assets/scripts/frontend/jquery-v1.11.2.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/frontend/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/frontend/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+    <script type="text/javascript" src="assets/scripts/frontend/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!--script(type="text/javascript",src="assets/scripts/frontend/stickytooltip/stickytooltip.js")-->
+    <script type="text/javascript" src="assets/scripts/frontend/main.js"></script>
+  </body>
+</html>

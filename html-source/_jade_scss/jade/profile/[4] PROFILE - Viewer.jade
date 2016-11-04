@@ -1,0 +1,176 @@
+doctype html
+html(lang="en")
+	head
+		block title
+			title DropDeck
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		meta(name="format-detection", content="telephone=no")
+		// Favicon and touch icons
+		link(rel="stylesheet", href="assets/styles/frontend/bootstrap/bootstrap.min.css")
+		link(rel="stylesheet", href="assets/styles/frontend/swiper/swiper.min.css")
+		link(rel="stylesheet", href="assets/styles/frontend/rangeSlide/normalize.css")
+		link(rel="stylesheet", href="assets/styles/frontend/rangeSlide/ion.rangeSlider.css")
+		link(rel="stylesheet", href="assets/styles/frontend/rangeSlide/ion.rangeSlider.skinFlat.css")
+		link(rel="stylesheet", href="assets/styles/frontend/styles.css")
+	body
+		
+		include ../section/menu-slidebar.jade
+		.main-content
+			.profile-page
+				.container
+					.row
+						.col-md-9.col-md-offset-1
+							.info-profile
+								.avatar
+									.img
+										img(src="assets/images/profile/tuananh.png", alt="")
+								.info-user
+									.top
+										.social 
+											ul
+												li
+													a(href="#" class="facebook")
+														i(class="fa fa-facebook")
+												li
+													a(href="#" class="linkedin")
+														i(class="fa fa-linkedin")
+												li
+													a(href="#" class="google-plus")
+														i(class="fa fa-google-plus")
+										div.block__title-wrap
+											h2.block__title.block__title--view VO VIET ANH
+									p.mail @vovietanh
+									p.desc Bio Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. 
+									div(class="trustful")
+										div(class="left")
+											p Folliow 
+												span 69k
+											ul.list-user
+												li
+													img(src="assets/images/u1.png", alt="ad")
+												li
+													img(src="assets/images/u1.png", alt="ad")
+												li
+													img(src="assets/images/u1.png", alt="ad")
+												li
+													img(src="assets/images/u1.png", alt="ad")
+												li
+													img(src="assets/images/u1.png", alt="ad")
+										div(class="right")
+											div(class="list-trustful")
+												p
+													b(id="result_trustful")
+													span 6k
+												div(class="trustful-toggle")
+													a.icon-active Adjust
+													div(class="trustful-hover")
+														div(class="info-adjust")
+															span.range
+																input(id="trustful")
+															span(class="adjust") Trustful
+											ul.list-user
+												li
+													img(src="assets/images/u1.png", alt="ad")
+												li
+													img(src="assets/images/u1.png", alt="ad")
+												li
+													img(src="assets/images/u1.png", alt="ad")
+												li
+													img(src="assets/images/u1.png", alt="ad")
+												li
+													img(src="assets/images/u1.png", alt="ad")
+			div(class="slides-partner")						
+				.swiper-container
+					.swiper-wrapper
+						.swiper-slide
+							.box-deck
+								img(src="assets/images/desk/1.png")
+						.swiper-slide
+							.box-deck
+								img(src="assets/images/desk/1.png")
+						.swiper-slide
+							.box-deck
+								img(src="assets/images/desk/1.png")
+						.swiper-slide
+							.box-deck
+								img(src="assets/images/desk/1.png")
+						.swiper-slide
+							.box-deck
+								img(src="assets/images/desk/1.png")
+						.swiper-slide
+							.box-deck
+								img(src="assets/images/desk/1.png")
+						.swiper-slide
+							.box-deck
+								img(src="assets/images/desk/1.png")
+						.swiper-slide
+							.box-deck
+								img(src="assets/images/desk/1.png")
+				.swiper-button-prev
+				.swiper-button-next
+			div(class="comment")
+				.container
+					.row
+						div(class="col-md-offset-1 col-md-9")
+							ul.list-notification
+								li
+									div.info-notification
+										.img
+											img(src="assets/images/noti/1.png" alt="")
+										.text 
+											a(href="#") Vo Viet Anh 
+											|has followed 
+											a(href="#")	Chan Kiet 
+									div.time 5 mins
+								li
+									div.info-notification
+										.img
+											img(src="assets/images/noti/2.png" alt="")
+										.text 
+											a(href="#") Vo Viet Anh 
+											|has followed 
+											a(href="#")	Chan Kiet 
+									div.time 1 hr
+								li
+									div.info-notification
+										.img
+											img(src="assets/images/noti/2.png" alt="")
+										.text 
+											a(href="#") Vo Viet Anh 
+											|has followed 
+											a(href="#")	Chan Kiet 
+										div( class="desc")
+											p “After the next round, we will expand into the territory of crowdfunding.”
+											p
+												img(src="assets/images/noti/1-comment.png" alt="")
+									div.time Yesterday
+								li
+									div.info-notification
+										.img
+											img(src="assets/images/noti/1.png" alt="")
+										.text 
+											a(href="#") Vo Viet Anh 
+											|has followed 
+											a(href="#")	Chan Kiet 
+										div( class="desc")
+											p
+												img(src="assets/images/noti/2-comment.png" alt="")
+									div.time Yesterday
+								li
+									div.info-notification
+										.img
+											img(src="assets/images/noti/1.png" alt="")
+										.text 
+											a(href="#") Vo Viet Anh 
+											|has followed 
+											a(href="#")	Chan Kiet 
+									div.time 5 mins
+								li.load-more
+									a(href="#") Load more
+							
+		//javascript dev
+		script(type="text/javascript",src="assets/scripts/frontend/jquery-v1.11.2.min.js")
+		script(type="text/javascript",src="assets/scripts/frontend/swiper/swiper.min.js")
+		script(type="text/javascript",src="assets/scripts/frontend/rangeSlide/ion.rangeSlider.js")
+		script(type="text/javascript",src="assets/scripts/frontend/main.js")

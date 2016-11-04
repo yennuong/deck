@@ -1,0 +1,133 @@
+footer{
+	border-top: 7px solid $green;
+	>.container{
+		padding-top: 30px;
+		padding-bottom: 15px;
+	}
+	h4{
+		margin: 0;
+	}
+	ul{
+		margin: 0;
+		li{
+			list-style: none;
+		}
+	}
+	.col-2, .col-3{
+		margin-top: 15px;
+	}
+	.dmca{
+		margin-top: 20px;
+	}
+	.info{
+		margin-top: 10px;
+		p{
+			margin-bottom: 15px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		a{
+			color: #007aff;
+		}
+	}
+}
+.category_list{
+	h4{
+		color: #2b2b2b;
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+	ul{
+		&:after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		li{
+			padding: 0 10px;
+			width: 50%;
+			float: left;
+			a{
+				padding-left: 15px;
+				position: relative;
+				&:after{
+					position: absolute;
+					top: 50%;
+					left: 0%;
+				    transform: translateY(-50%);
+					content: "›";
+				}
+			}
+		}
+	}
+}
+ul.social-icon{
+	&:after{
+		display: table;
+		content: "";
+		clear: both;
+	}
+	li{
+		float: left;
+		margin-right: 15px;
+	}
+	li.icon{
+		text-align: center;
+		a{
+			color: $white;
+			&:hover{
+				background: red;
+			}
+		}
+		a{
+			display: block;
+			width: 24px;
+			height: 24px;
+			border-radius: 50%;
+			line-height: 24px;
+			text-align: 24px;
+		}
+	}
+	li.icon-facebook{
+		a{
+			background-color: #3c5b9b;
+		}
+	}
+	li.icon-twitter{
+		a{
+			background-color: #2daae1;
+		}
+	}
+	li.icon-googleplus{
+		a{
+			background-color:#f63d27;
+		}
+	}
+	li.icon-linkedin{
+		a{
+			background-color:#338ec1;
+		}
+	}
+	li.icon-pinterest{
+		a{
+			background-color:#cb2027;
+		}
+	}
+	li.icon-youtube{
+		a{
+			background-color:#e14e42;
+		}
+	}
+}
+.copyright{
+	background:  $green;
+	text-align: center;
+	p{
+		margin: 0;
+		color: $white;
+		font-size: 15px;
+		padding: 15px 0;
+	}
+}

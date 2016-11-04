@@ -1,0 +1,16 @@
+.get-org-chart .get-left,
+        .get-org-chart .get-right,
+        .get-org-chart .get-up, .get-down,
+        .get-org-chart .get-oc-tb,
+        g[data-btn-action]{
+            display: none !important;
+        }
+        .get-box:hover{
+            fill: $white;
+        }
+.get-org-chart{
+	background: transparent;
+}
+.get-blue.get-org-chart{
+	background: transparent;
+}
